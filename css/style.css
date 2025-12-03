@@ -60,6 +60,53 @@ body {
 }
 
 /* header styles */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-box i {
+    font-size: 18px;
+    color: #333;
+}
+
+.icon-box span {
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+/* Cart count bubble */
+.cart-box {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    background: orange;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
 
 #header {
   display: flex;
@@ -218,6 +265,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 10px;
   margin: 0 60px;
 }
 .product-section h1,
@@ -266,6 +314,7 @@ body {
   position: absolute;
   right: 10px;
   bottom: 10px;
+  
 }
 
 /* off banner section styles */
@@ -422,3 +471,35 @@ span {
   border-radius: 0 6px 6px 0;
   cursor: pointer;
 }
+
+/* footer section styles */
+
+#footer{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  padding: 75px;
+  background-color: #ececec;
+}
+#footer div{
+}
+#footer p, #footer a{
+  color: rgb(109, 109, 109);
+  text-decoration: none;
+}
+#footer a:hover{
+  color:#088178;
+}
+#footer .about a{
+  display: block;
+  padding:8px 0;
+}
+#footer .myaccount a{
+  display: block;
+  padding:8px 0;
+}
+#footer .download img{
+  border: 1px solid #08817969;
+  border-radius: 7px;
+}
+
