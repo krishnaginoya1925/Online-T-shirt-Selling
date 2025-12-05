@@ -86,6 +86,7 @@ body {
     letter-spacing: 0.5px;
 }
 
+
 /* Cart count bubble */
 .cart-box {
     position: relative;
@@ -211,6 +212,9 @@ body {
 }
 
 /* feature section styles */
+.f1{
+  padding-top: 30px;
+}
 
 #features {
   display: flex;
