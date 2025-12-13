@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce website</title>
-    <link rel="stylesheet" href="../css/wishlist.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
     <script
       src="https://kit.fontawesome.com/0e53af926d.js"
       crossorigin="anonymous"
@@ -22,7 +22,7 @@
         <div class="header-list">
           <nav class="header-list-nav">
             <ul>
-              <li><a  href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="collection.html">Collection</a></li>
               <li><a href="blog.html">Category</a></li>
               <li><a href="about.html">About</a></li>
@@ -33,14 +33,24 @@
    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-          <div class="header-list-icon">
-            <a href=""><i class="fa fa-bag-shopping"></i></a>
-          </div>
-           <div class="icon-box">
-  <a class="active" href="wishlist.html" class="wishlist-link" aria-label="Open wishlist">
-    <i class="fa-regular fa-heart"></i>
+          <div class="header-list-icon cart-icon">
+  <a href="cart.html">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-count" id="cartCount">0</span>
   </a>
 </div>
+
+
+           <div class="icon-box">
+  <a href="wishlist.html" class="wishlist-link" aria-label="Open wishlist">
+    <i class="fa-regular fa-heart"></i>
+  </a>
+
+</div>
+
+
+       
+
     <div class="icon-box">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
@@ -51,24 +61,24 @@
      </div>
       </div>
 </header>
-    </header>
-<h1 class="title">My Wishlist</h1>
+</header>
 
-<div class="wishlist-container" id="wishlistBox"></div>
-<main>
-  <section id="newsletter">
-        <div class="newsletter-text">
-          <h3>Sign Up For Newsletters</h3>
-          <h5>get e-mail updates about out latest shop and <span>special offers</span></h5>
-        </div>
-        <div class="form">
-          <input type="email" placeholder="Your email address" id="email-address-input">
-          <button>Sign Up</button>
-        </div>
-  </section>
-</main>
+<!-- main section-->
 
- <!--footer section-->
+<table id="cartTable" border="1" width="80%" align="center">
+  <tr>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Remove</th>
+  </tr>
+</table>
+
+<h3 id="total" style="text-align:center;margin-top:20px;"></h3>
+
+
+
+
+<!--footer section-->
 
     <footer>
       <div id="footer">
@@ -126,7 +136,7 @@
     </footer>
 
 
-<script src="../js/wishlist.js"></script>
+<script src="../js/cart.js"></script>
 
 </body>
 </html>
