@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const container = document.getElementById("cartContainer");
   const totalPriceEl = document.getElementById("totalPrice");
 
@@ -16,16 +15,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     cart.forEach((item, index) => {
-      total += item.price * item.qty;
+      const itemTotal = item.price * item.qty;
+      total += itemTotal;
 
       container.innerHTML += `
         <div class="cart-item">
-          <img src="${item.img}">
+          <img src="${item.img}" alt="${item.name}">
+          
           <div class="cart-info">
             <h3>${item.name}</h3>
             <p>Price: $${item.price}</p>
-            <p>Qty: ${item.qty}</p>
-            <button onclick="removeItem(${index})">Remove</button>
+
+            <div class="qty-box">
+              <button onclick="changeQty(${index}, -1)">−</button>
+              <span>${item.qty}</span>
+              <button onclick="changeQty(${index}, 1)">+</button>
+            </div>
+
+            <p class="item-total">Item Total: $${itemTotal}</p>
+
+            <button class="remove-btn" onclick="removeItem(${index})">
+              Remove
+            </button>
           </div>
         </div>
       `;
@@ -33,6 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     totalPriceEl.textContent = total;
   }
+
+  window.changeQty = (index, change) => {
+    if (cart[index].qty + change < 1) return;
+
+    cart[index].qty += change;
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+  };
 
   window.removeItem = index => {
     cart.splice(index, 1);
