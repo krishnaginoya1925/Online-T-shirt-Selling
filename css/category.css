@@ -8,6 +8,13 @@
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
 }
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 h1 {
   font-size: 50px;
@@ -169,14 +176,16 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #e3e6f3;
-  padding: 20px 80px;
+  padding: 20px 40px;  /* reduced */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  z-index: 999;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 .header-list {
   display: flex;
@@ -224,17 +233,14 @@ body {
 }
 
 
-body {
-background: #fff;
-padding: 40px;
-}
+
 
 
 .title {
 text-align: center;
 font-size: 36px;
 margin-bottom: 5px;
-margin-top: 20px;
+margin-top: 50px;
 padding: 50px;
 }
 
@@ -285,20 +291,20 @@ grid-template-columns: 1fr;
 }
 
 #newsletter {
-  margin-top: 80px;
+  width: 100%;
+  margin-top: 50px;
   background-image: url(../images/banner/b14.png);
   background-repeat: no-repeat;
-  background-position: 180px;
+  background-position: right center;
   background-color: #041e42;
   height: 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 75px;
-  margin-top: 50px;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  padding: 0 40px;
+  box-sizing: border-box;
 }
+
 
 #newsletter .newsletter-text h3 {
   color: white;
@@ -339,16 +345,17 @@ grid-template-columns: 1fr;
 
 /* footer section styles */
 
-#footer{
+#footer {
+  width: 100%;
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 75px;
+  padding: 75px 40px;
   background-color: #ececec;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-bottom: calc(-50vw + 50%);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 #footer div{
 }
 #footer p, #footer a{
