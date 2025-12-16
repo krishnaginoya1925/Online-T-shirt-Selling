@@ -32,12 +32,27 @@ p {
   color: #465b52;
   margin: 15px 0 20px 0;
 }
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #f6f6f6;
+}
+
+
 .section-p1 {
   padding: 40px 0;
 }
 .section-m1 {
   margin: 40px 0;
 }
+.section-p1:not(footer) {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
 
 button.normal {
   font-size: 14px;
@@ -57,6 +72,11 @@ button.normal:hover {
 }
 body {
   width: 100%;
+}
+.cart-page {
+  padding: 120px 40px 40px; /* top for fixed header */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* header styles */
@@ -224,7 +244,6 @@ body {
 }
 body {
   font-family: Arial, sans-serif;
-  padding: 40px;
 }
 
 .title {
@@ -272,17 +291,18 @@ body {
 
 /* footer section styles */
 
-#footer{
+#footer {
+  width: 100%;
+  background: #ececec;
+  padding: 60px 80px;
   display: flex;
-  align-items:flex-start;
   justify-content: space-between;
-  padding: 75px;
-  background-color: #ececec;
-  margin-top: 50px;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-bottom: calc(-50vw + 50%);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
+
+
 #footer div{
 }
 #footer p, #footer a{
@@ -310,7 +330,11 @@ body {
 /* ===== CART PAGE BACKGROUND ===== */
 body {
   background: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
 
 /* TITLE */
 .title {

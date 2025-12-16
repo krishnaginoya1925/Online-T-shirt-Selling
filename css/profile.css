@@ -8,6 +8,11 @@
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 
 h1 {
   font-size: 50px;
@@ -216,10 +221,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-body {
-  background: #fff;
-    padding-top: 90px;
-}
 
 .container {
   max-width: 1200px;
@@ -227,8 +228,12 @@ body {
 }
 
 /* ================= PROFILE LAYOUT ================= */
+.profile-section{
+  margin-top: 150px;
+}
 .profile-layout {
   display: flex;
+  margin-top: 50px;
   gap: 40px;
   margin-top: 40px;
 }
@@ -321,17 +326,25 @@ body {
 }
 /* footer section styles */
 
-#footer{
-  display: flex;
-  align-items:flex-start;
-  justify-content: space-between;
-  padding: 75px;
+/* FULL WIDTH FOOTER */
+footer {
+  width: 100%;
+  margin-top: 30px;
   background-color: #ececec;
-  margin-top: 50px;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-bottom: calc(-50vw + 50%);
 }
+
+/* CENTERED CONTENT */
+#footer {
+  max-width: 1200px;
+  margin-top: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 75px 20px;
+  box-sizing: border-box;
+}
+
 #footer div{
 }
 #footer p, #footer a{

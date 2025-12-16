@@ -8,9 +8,9 @@
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
 }
-body {
-  margin: 0;
-  padding: 0;
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -203,6 +203,7 @@ body {
   bottom: -4px;
   left: 20px;
 }
+
 /* home main styles */
 
 /* hero section styles */
@@ -306,7 +307,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 10px;
-  margin: 0 60px;
+    margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 20px;
 }
 .product-section h1,
 .product-section p {
@@ -330,12 +333,11 @@ body {
   border-radius: 25px;
 }
 .product-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
+
 
 
 .product-section .product-cart span {
@@ -419,10 +421,9 @@ body {
   padding: 20px 0;
 }
 #off-banner {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  width: 100%;
 }
+
 
 
 /* new arrival section styles 
@@ -446,7 +447,8 @@ span {
   justify-content: center;
 }
 #banners .big-banners div {
-  min-width: 580px;
+    width: 580px;
+  max-width: 100%;
   margin: 15px;
   height: 300px;
   display: flex;
@@ -493,7 +495,8 @@ span {
   justify-content: center;
 }
 #banners .small-banners div {
-  min-width: 370px;
+   width: 370px;
+  max-width: 100%;
   height: 200px;
   margin: 15px;
   display: flex;
@@ -520,31 +523,29 @@ span {
 /* newsletter section styles */
 
 /* ===== NEWSLETTER SECTION ===== */
-#newsletter {
-  background-color: #041e42;
-  background-image: url(../images/banner/b14.png);
-  background-repeat: no-repeat;
-  background-position: right 120px center;
-
-  width: 100%;
+#full-width {
+  width: 100vw;              /* real viewport width */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
+
 #newsletter {
+  margin-top: 50px;    
+  margin-bottom: 0;      /* ✅ space above only */
+  width: 100%;               /* ✅ full width */
   background-image: url(../images/banner/b14.png);
   background-repeat: no-repeat;
-  background-position: right 100px center;
+  background-position: center;
   background-color: #041e42;
-
-  width: 100vw;
   height: 160px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 0 75px;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  padding: 0 75px;           /* inner spacing (safe) */
 }
+
+
+
 #newsletter .newsletter-text h3 {
   color: #fff;
   font-size: 32px;
@@ -603,6 +604,7 @@ span {
 @media (max-width: 900px) {
   #newsletter {
     flex-direction: column;
+    margin-bottom: 0;
     text-align: center;
     padding: 30px 20px;
     height: auto;
@@ -625,13 +627,17 @@ span {
 
 /* footer section styles */
 
-#footer{
+#footer {
   display: flex;
-  align-items:flex-start;
+  margin-top: 0;
+  padding-top: 0;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 75px;
   background-color: #ececec;
+  width: 100%;
 }
+
 #footer div{
 }
 #footer p, #footer a{
