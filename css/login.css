@@ -5,32 +5,32 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
 /* Full page center */
 .auth-section {
-  min-height: 100vh;          /* Full screen height */
+  min-height: 100vh;
+  /* Full screen height */
   display: flex;
-  align-items: center;        /* Vertical center */
-  justify-content: center;    /* Horizontal center */
-  background: #ffffff;        /* White page */
+  align-items: center;
+  /* Vertical center */
+  justify-content: center;
+  /* Horizontal center */
+  background: #ffffff;
+  /* White page */
 }
-
 /* Login box */
 .auth-box {
   width: 380px;
   background: #ffffff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
-
 /* Title */
 .auth-box h2 {
   text-align: center;
   margin-bottom: 25px;
   font-weight: 600;
 }
-
 /* Inputs */
 .auth-box input {
   width: 100%;
@@ -40,12 +40,10 @@
   border: 1px solid #ddd;
   font-size: 14px;
 }
-
 .auth-box input:focus {
   outline: none;
   border-color: #0a7c72;
 }
-
 /* Button */
 .auth-box .btn {
   width: 100%;
@@ -57,46 +55,37 @@
   border-radius: 6px;
   cursor: pointer;
 }
-
 .auth-box .btn:hover {
   background: #066b62;
 }
-
 /* Text */
 .auth-text {
   text-align: center;
   margin-top: 18px;
   font-size: 14px;
 }
-
 .auth-text a {
   color: #0a7c72;
   text-decoration: none;
   font-weight: 500;
 }
-
 .auth-text a:hover {
   text-decoration: underline;
 }
-
 /* Responsive */
-
 /* ===============================
    RESPONSIVE AUTH PAGE
 ================================ */
-
 /* Tablets */
 @media (max-width: 768px) {
   .auth-box {
     width: 90%;
     padding: 25px;
   }
-
   .auth-box h2 {
     font-size: 22px;
   }
 }
-
 /* Mobile phones */
 @media (max-width: 480px) {
   .auth-box {
@@ -104,33 +93,27 @@
     padding: 20px;
     border-radius: 8px;
   }
-
   .auth-box h2 {
     font-size: 20px;
     margin-bottom: 20px;
   }
-
   .auth-box input {
     padding: 12px;
     font-size: 13px;
   }
-
   .auth-box .btn {
     padding: 12px;
     font-size: 15px;
   }
-
   .auth-text {
     font-size: 13px;
   }
 }
-
 /* Very small devices */
 @media (max-width: 360px) {
   .auth-box {
     padding: 16px;
   }
-
   .auth-box h2 {
     font-size: 18px;
   }

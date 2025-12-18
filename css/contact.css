@@ -1,14 +1,10 @@
-
-
 /* contact styles */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 /* HEADER */
 .header {
   display: flex;
@@ -17,29 +13,24 @@
   padding: 20px 60px;
   background: #eaeef6;
 }
-
 .logo {
   font-size: 28px;
   font-weight: bold;
 }
-
 .nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #222;
   font-weight: 500;
 }
-
 .nav a.active {
   color: #088178;
   border-bottom: 2px solid #088178;
 }
-
 .icons i {
   margin-left: 15px;
   cursor: pointer;
 }
-
 /* HERO */
 .contact-hero {
   background: #eaeef6;
@@ -47,16 +38,13 @@
   padding: 60px 20px;
   margin-top: 80px;
 }
-
 .contact-hero h1 {
   font-size: 40px;
   margin-bottom: 10px;
 }
-
 .contact-hero p {
   color: #555;
 }
-
 /* CONTACT SECTION */
 .contact-container {
   display: flex;
@@ -64,25 +52,20 @@
   padding: 60px;
   gap: 40px;
 }
-
 .contact-info {
   width: 40%;
 }
-
 .contact-info h2 {
   margin-bottom: 20px;
 }
-
 .contact-info p {
   margin-bottom: 15px;
   color: #555;
 }
-
 .contact-info i {
   color: #088178;
   margin-right: 10px;
 }
-
 /* FORM */
 .contact-form {
   width: 50%;
@@ -90,11 +73,9 @@
   padding: 30px;
   border-radius: 8px;
 }
-
 .contact-form h2 {
   margin-bottom: 20px;
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -103,12 +84,10 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 .contact-form textarea {
   resize: none;
   height: 120px;
 }
-
 .contact-form button {
   background: #088178;
   color: white;
@@ -117,18 +96,14 @@
   cursor: pointer;
   border-radius: 4px;
 }
-
 .contact-form button:hover {
   background: #06695f;
 }
-
 #successMsg {
   margin-top: 10px;
   color: green;
 }
-
 /* send message */
-
 /* Success Message */
 .success-msg {
   visibility: hidden;
@@ -142,7 +117,6 @@
   text-align: center;
   transition: opacity 0.4s ease;
 }
-
 .success-msg.show {
   visibility: visible;
   opacity: 1;

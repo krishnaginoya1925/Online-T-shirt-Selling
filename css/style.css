@@ -6,7 +6,8 @@
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
 }
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -63,24 +64,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 22px; 
+  gap: 22px;
   padding-right: 30px;
 }
 .icon-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
 }
 .icon-box i {
-    font-size: 18px;
-    color: #333;
+  font-size: 18px;
+  color: #333;
 }
 .icon-box span {
-    font-size: 14px;
-    color: #555;
-    letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #555;
+  letter-spacing: 0.5px;
 }
 .icon-box,
 .header-list-icon {
@@ -101,12 +102,10 @@ body {
 .account-container {
   position: relative;
 }
-
 .account-container .icon-box {
   background: #f2f2f2;
   border-radius: 50%;
 }
-
 /* Dropdown */
 .account-dropdown {
   position: absolute;
@@ -115,7 +114,7 @@ body {
   width: 150px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   display: none;
   z-index: 999;
 }
@@ -141,7 +140,7 @@ body {
   padding: 20px 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -190,9 +189,7 @@ body {
   bottom: -4px;
   left: 20px;
 }
-
 /* hero section styles */
-
 #hero {
   background-image: url(../images/hero4.png);
   width: 100%;
@@ -208,7 +205,7 @@ body {
   padding-bottom: 15px;
   font-size: 40px;
 }
-#hero h2{
+#hero h2 {
   font-size: 70px;
 }
 #hero h1 {
@@ -230,7 +227,7 @@ body {
   padding: 14px 65px 14px 65px;
 }
 /* feature section styles */
-.f1{
+.f1 {
   padding-top: 30px;
 }
 #features {
@@ -367,7 +364,7 @@ body {
   transition: 0.3s;
 }
 .wishlist-btn.active i {
-   color: red !important;   
+  color: red !important;
 }
 .cart-btn i {
   color: #00695c;
@@ -393,9 +390,7 @@ body {
 #off-banner {
   width: 100%;
 }
-
 /* banners section styles */
-
 #banners {
   margin: 0 60px;
 }
@@ -458,7 +453,7 @@ span {
   justify-content: center;
 }
 #banners .small-banners div {
-   width: 370px;
+  width: 370px;
   max-width: 100%;
   height: 200px;
   margin: 15px;
@@ -475,9 +470,7 @@ span {
 #banners .small-banners h5 {
   color: #771818;
 }
-
 /* category.css */
-
 .title {
   text-align: center;
   font-size: 36px;
@@ -511,16 +504,14 @@ span {
 }
 .category-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 900px) {
   .category-container {
     grid-template-columns: 1fr;
   }
 }
-
 /* profile.css */
-
 :root {
   --primary: #111;
   --border-soft: #ededed;
@@ -537,7 +528,7 @@ span {
   margin: auto;
 }
 /* ================= PROFILE LAYOUT ================= */
-.profile-section{
+.profile-section {
   margin-top: 150px;
 }
 .profile-layout {
@@ -546,7 +537,6 @@ span {
   gap: 40px;
   margin-top: 40px;
 }
-
 /* ================= SIDEBAR ================= */
 .profile-sidebar {
   width: 260px;
@@ -569,7 +559,6 @@ span {
 .profile-sidebar ul li i {
   font-size: 16px;
 }
-
 /* ACTIVE ITEM */
 .profile-sidebar ul li.active {
   background: #fbf8f3;
@@ -581,7 +570,6 @@ span {
 .profile-sidebar ul li.logout {
   color: #d32f2f;
 }
-
 /* ================= MAIN CONTENT ================= */
 .profile-content {
   flex: 1;
@@ -591,7 +579,6 @@ span {
   font-weight: 700;
   margin-bottom: 30px;
 }
-
 /* ================= PROFILE BOX ================= */
 .profile-box {
   background: #fff;
@@ -620,16 +607,11 @@ span {
   text-decoration: underline;
   font-size: 14px;
 }
-
-/* checkout.css */
-
-
-
 /* newsletter section styles */
 #newsletter {
-  margin-top: 50px;    
-  margin-bottom: 0;      
-  width: 100%;              
+  margin-top: 50px;
+  margin-bottom: 0;
+  width: 100%;
   background-image: url(../images/banner/b14.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -638,7 +620,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 75px;           
+  padding: 0 75px;
 }
 #newsletter .newsletter-text h3 {
   color: #fff;
@@ -682,7 +664,6 @@ span {
 #newsletter .form button:hover {
   background-color: #066d66;
 }
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   #newsletter {
@@ -704,7 +685,6 @@ span {
   }
 }
 /* footer section styles */
-
 #footer {
   display: flex;
   margin-top: 0;
@@ -715,27 +695,27 @@ span {
   background-color: #ececec;
   width: 100%;
 }
-#footer p, #footer a{
+#footer p,
+#footer a {
   color: rgb(109, 109, 109);
   text-decoration: none;
 }
-#footer a:hover{
-  color:#088178;
+#footer a:hover {
+  color: #088178;
 }
-#footer .about a{
+#footer .about a {
   display: block;
-  padding:8px 0;
+  padding: 8px 0;
 }
-#footer .myaccount a{
+#footer .myaccount a {
   display: block;
-  padding:8px 0;
+  padding: 8px 0;
 }
-#footer .download img{
+#footer .download img {
   border: 1px solid #08817969;
   border-radius: 7px;
 }
 /* Responsive */
-
 @media (max-width: 1200px) {
   #header {
     padding: 20px 40px;
@@ -753,10 +733,13 @@ span {
     padding: 60px 40px;
   }
 }
-
 @media (max-width: 992px) {
-  h1 { font-size: 42px; }
-  h2 { font-size: 36px; }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 36px;
+  }
   #header {
     padding: 15px 25px;
   }
@@ -796,16 +779,21 @@ span {
     gap: 30px;
   }
 }
-
 @media (max-width: 768px) {
-  h1 { font-size: 36px; }
-  h2 { font-size: 30px; }
-  p { font-size: 15px; }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p{
+    font-size: 15px;
+  }
   #header {
     padding: 15px 20px;
   }
   .header-list-nav ul {
-    display: none; 
+    display: none;
   }
   #hero {
     height: 70vh;
@@ -857,10 +845,13 @@ span {
     text-align: center;
   }
 }
-
 @media (max-width: 480px) {
-  h1 { font-size: 30px; }
-  h2 { font-size: 26px; }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
   #features .f-box {
     width: 100%;
   }

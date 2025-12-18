@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 /* global styles */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
 }
-
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -38,7 +35,6 @@ p {
 .section-m1 {
   margin: 40px 0;
 }
-
 button.normal {
   font-size: 14px;
   font-weight: 600px;
@@ -58,33 +54,29 @@ button.normal:hover {
 body {
   width: 100%;
 }
-
 /* header styles */
 .header-icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 22px; 
+  gap: 22px;
   padding-right: 30px;
 }
-
 .icon-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
 }
-
 .icon-box i {
-    font-size: 18px;
-    color: #333;
+  font-size: 18px;
+  color: #333;
 }
-
 .icon-box span {
-    font-size: 14px;
-    color: #555;
-    letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #555;
+  letter-spacing: 0.5px;
 }
 .icon-box,
 .header-list-icon {
@@ -105,12 +97,10 @@ body {
 .account-container {
   position: relative;
 }
-
 .account-container .icon-box {
   background: #f2f2f2;
   border-radius: 50%;
 }
-
 /* Dropdown */
 .account-dropdown {
   position: absolute;
@@ -119,11 +109,10 @@ body {
   width: 150px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   display: none;
   z-index: 999;
 }
-
 .account-dropdown a {
   display: block;
   padding: 10px 15px;
@@ -131,39 +120,32 @@ body {
   color: #333;
   font-size: 14px;
 }
-
 .account-dropdown a:hover {
   background: #f5f5f5;
 }
-
 /* Show dropdown */
 .account-dropdown.show {
   display: block;
 }
-
-
 /* Cart count bubble */
 .cart-box {
-    position: relative;
+  position: relative;
 }
-
 .cart-count {
-    position: absolute;
-    top: -10px;
-    left: 8px;
-    background: orange;
-    color: white;
-    font-size: 12px;
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: 8px;
+  background: orange;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
-
-
 #header {
   display: flex;
   align-items: center;
@@ -172,12 +154,11 @@ body {
   padding: 20px 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
-
 .header-list {
   display: flex;
   align-items: center;
@@ -222,31 +203,25 @@ body {
   bottom: -4px;
   left: 20px;
 }
-
 /* product-detail css */
-
 :root {
   --primary: #000000;
 }
-
 /* ===== GLOBAL ===== */
 body {
   background: #f6f6f6;
 }
-
 /* container same as header */
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 40px;
 }
-
 /* ===== PRODUCT SECTION ===== */
 .product-detail {
   margin-top: 80px;
   padding: 60px 0;
 }
-
 .pro-container {
   display: flex;
   gap: 40px;
@@ -254,20 +229,17 @@ body {
   padding: 30px;
   border-radius: 12px;
 }
-
 /* ===== IMAGE SECTION ===== */
 .image-section {
   width: 50%;
   display: flex;
   gap: 15px;
 }
-
 .thumbnails {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .thumbnails img {
   width: 80px;
   height: 100px;
@@ -276,70 +248,58 @@ body {
   cursor: pointer;
   object-fit: cover;
 }
-
 .main-image img {
   width: 320px;
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
 }
-
 /* ===== PRODUCT INFO ===== */
 .product-info {
   width: 50%;
 }
-
 .pro-info {
   padding-bottom: 20px;
 }
-
 .brand {
   font-size: 22px;
   font-weight: 700;
 }
-
 .product-title {
   font-size: 18px;
   color: #555;
   margin: 6px 0;
 }
-
 .rating {
   font-size: 14px;
   color: green;
   margin-bottom: 10px;
 }
-
 .price {
   font-size: 26px;
   font-weight: bold;
   margin: 10px 0;
 }
-
 .tax {
   font-size: 14px;
   color: green;
 }
-
 /* ===== SIZE ===== */
 .size-title {
   margin-top: 25px;
   font-weight: bold;
 }
-
 .size-chart {
   color: red;
   font-size: 12px;
   margin-left: 10px;
   cursor: pointer;
 }
-
 .size-box {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
-
 .size-box button {
   padding: 8px 14px;
   border-radius: 6px;
@@ -348,20 +308,17 @@ body {
   color: var(--primary);
   cursor: pointer;
 }
-
 .size-box button.active,
 .size-box button:hover {
   background: var(--primary);
   color: #fff;
 }
-
 /* ===== BUTTONS ===== */
 .buttons {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
-
 .btn {
   text-decoration: none;
   padding: 12px;
@@ -369,64 +326,55 @@ body {
   font-weight: bold;
   text-align: center;
 }
-
 .cart-btn {
   width: 50%;
   background: var(--primary);
   color: #fff;
 }
-
 .wishlst-btn {
   width: 50%;
   border: 1px solid var(--primary);
   color: var(--primary);
 }
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .pro-container {
     flex-direction: column;
   }
-
   .image-section,
   .product-info {
     width: 100%;
   }
-
   .main-image img {
     width: 100%;
     height: auto;
   }
 }
-
-
 /* footer section styles */
-
-#footer{
+#footer {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 75px;
   background-color: #ececec;
 }
-#footer div{
-}
-#footer p, #footer a{
+#footer p,
+#footer a {
   color: rgb(109, 109, 109);
   text-decoration: none;
 }
-#footer a:hover{
-  color:#088178;
+#footer a:hover {
+  color: #088178;
 }
-#footer .about a{
+#footer .about a {
   display: block;
-  padding:8px 0;
+  padding: 8px 0;
 }
-#footer .myaccount a{
+#footer .myaccount a {
   display: block;
-  padding:8px 0;
+  padding: 8px 0;
 }
-#footer .download img{
+#footer .download img {
   border: 1px solid #08817969;
   border-radius: 7px;
 }
