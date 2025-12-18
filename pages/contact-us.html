@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title> Contact Us | Cara</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="../css/contact.css">
   <link rel="stylesheet" href="../css/style.css">
-
 </head>
-
 <body>
-
   <!-- ================= HEADER ================= -->
   <header>
     <div id="header">
@@ -33,9 +25,7 @@
           </ul>
         </nav>
         <header class="header-icons">
-
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
           <div class="header-list-icon">
             <a href="cart.html">
               <i class="fa fa-bag-shopping"></i></a>
@@ -44,33 +34,27 @@
             <a href="wishlist.html" class="wishlist-link" aria-label="Open wishlist">
               <i class="fa-regular fa-heart"></i>
             </a>
-
-</div>
-    <div class="account-container">
-  <div class="icon-box" id="accountBtn">
-    <i class="fa-solid fa-user"></i>
-  </div>
-
-  <!-- Dropdown -->
-  <div class="account-dropdown" id="accountDropdown">
-    <a href="profile.html">Profile</a>
-    <a href="login.html">Login</a>
-    <a href="#" id="logoutBtn">Logout</a>
-  </div>
-</div>
-     </div>
+          </div>
+          <div class="account-container">
+            <div class="icon-box" id="accountBtn">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="account-dropdown" id="accountDropdown">
+              <a href="profile.html">Profile</a>
+              <a href="login.html">Login</a>
+              <a href="#" id="logoutBtn">Logout</a>
+            </div>
+          </div>
       </div>
-</header>
-
+    </div>
+  </header>
   <!-- ================= CONTACT HERO ================= -->
   <section class="contact-hero">
     <h1>Contact Us</h1>
     <p>We’d love to hear from you</p>
   </section>
-
   <!-- ================= CONTACT SECTION ================= -->
   <section class="contact-container">
-
     <!-- Contact Info -->
     <div class="contact-info">
       <h2>Get In Touch</h2>
@@ -79,29 +63,22 @@
       <p><i class="fa-solid fa-envelope"></i> support@cara.com</p>
       <p><i class="fa-solid fa-clock"></i> Mon - Sat: 10AM - 6PM</p>
     </div>
-
     <!-- Contact Form -->
     <div class="contact-form">
       <h2>Send Message</h2>
-
       <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Your Email" required>
         <textarea id="message" placeholder="Your Message" required></textarea>
-
         <button type="submit">Send Message</button>
-
         <!-- SUCCESS MESSAGE -->
         <div id="successMsg" class="success-msg">
           <i class="fa-solid fa-circle-check"></i>
           Message sent successfully!
         </div>
       </form>
-
     </div>
-
   </section>
-
   <!-- ================= FOOTER ================= -->
   <footer>
     <div id="footer">
@@ -154,52 +131,33 @@
         <p>Secured Payment Gateways</p>
         <img src="images/pay/pay.png" alt="">
       </div>
-
     </div>
   </footer>
-
   <script>
-    // alert("JS Loaded");
-
     document.addEventListener("DOMContentLoaded", function () {
       const accountBtn = document.getElementById("accountBtn");
       const dropdown = document.getElementById("accountDropdown");
-
       accountBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         dropdown.classList.toggle("show");
       });
-
       document.addEventListener("click", () => {
         dropdown.classList.remove("show");
       });
-
       document.getElementById("logoutBtn").addEventListener("click", () => {
         alert("Logged out successfully");
       });
-
-
-
       const form = document.getElementById("contactForm");
       const successMsg = document.getElementById("successMsg");
-
       form.addEventListener("submit", function (e) {
         e.preventDefault();
-
-        // Show success message
         successMsg.classList.add("show");
-
-        // Reset form
         form.reset();
-
-        // Hide message after 3 seconds
         setTimeout(() => {
           successMsg.classList.remove("show");
         }, 3000);
       });
     });
-
   </script>
 </body>
-
 </html>
