@@ -8,14 +8,10 @@
 /* Full page center */
 .auth-section {
   min-height: 100vh;
-  /* Full screen height */
   display: flex;
   align-items: center;
-  /* Vertical center */
   justify-content: center;
-  /* Horizontal center */
   background: #ffffff;
-  /* White page */
 }
 /* Login box */
 .auth-box {
@@ -73,9 +69,6 @@
   text-decoration: underline;
 }
 /* Responsive */
-/* ===============================
-   RESPONSIVE AUTH PAGE
-================================ */
 /* Tablets */
 @media (max-width: 768px) {
   .auth-box {

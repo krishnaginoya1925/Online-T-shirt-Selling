@@ -365,7 +365,6 @@ body {
   border-radius: 7px;
 }
 /* Responsive */
-/* ================= RESPONSIVE DESIGN ================= */
 /* ----------- Tablets (max-width: 1024px) ----------- */
 @media (max-width: 1024px) {
   #header {
@@ -497,11 +496,6 @@ body {
   .icon-box {
     width: 32px;
     height: 32px;
-  }
-  .cart-count {
-    width: 18px;
-    height: 18px;
-    font-size: 10px;
   }
   #newsletter {
     padding: 30px 16px;
