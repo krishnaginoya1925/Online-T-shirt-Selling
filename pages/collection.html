@@ -399,17 +399,13 @@
         e.stopPropagation();
         dropdown.classList.toggle("show");
       });
-      // Close dropdown when clicking outside
       document.addEventListener("click", () => {
         dropdown.classList.remove("show");
       });
-      // Logout action
       document.getElementById("logoutBtn").addEventListener("click", () => {
         alert("Logged out successfully");
-        // localStorage.clear(); // if using login system
       });
       const wishBtns = document.querySelectorAll(".wishlist-btn");
-      // Highlight already added items on page load
       const savedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
       wishBtns.forEach(btn => {
         const id = btn.dataset.id;
